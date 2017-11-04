@@ -1,5 +1,5 @@
+//TEST API
 
-//Test newtown lat and long;
 //https://fcc-weather-api.glitch.me/api/current?lat=-33.8998891&lon=151.1714736
 
 
@@ -25,25 +25,26 @@ $(document).ready(function(){
     const getAPIInfo = (lat, lon)=>{
 
         const urlString = `${api}${lat}&${lon}`;
-        let temp, cityName;
 
         $.ajax({
             url: urlString,
-            success: (function(result){
-                temp = result.main.temp;
-                cityName = result.name;
-                
-                $('#weather').html(`${temp}°C`);
-                $('#city').html(cityName);
+            success: result=>{
 
-            })
+                weatherInfo(`${result.main.temp}°C`, 
+                result.weather[0].main, 
+                result.weather[0].description, 
+                result.name);
+            }
         });
-
     }
 
+    const weatherInfo = (temp, main, description, cityName) =>{
 
-
-
+        $('#weather').html(temp);
+        $('#main').html(main);
+        $('#description').html(description);
+        $('#city').html(cityName);
+    }
 
 });
 
