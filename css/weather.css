@@ -2,7 +2,7 @@
 
 #city{
     font-family: 'Baloo', cursive;
-    font-size: 40px;
+    font-size: 50px;
     margin-top: 60px;
     color: black;
 }
@@ -22,5 +22,20 @@
 
 
 #weatherIcon{
-    width: 150px;
+    width: 180px;
+    margin-top: 20px;
+}
+
+#weather{
+    font-family: 'Baloo', cursive;
+    color: black;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+#main{
+    font-family: 'Baloo', cursive;
+    color: black;
+    margin-top: -30px;
+
 }

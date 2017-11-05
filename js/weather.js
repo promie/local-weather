@@ -1,9 +1,6 @@
 
 $(document).ready(function(){
 
-
-
-            
                 const api = 'https://fcc-weather-api.glitch.me/api/current?';
                 let lat, lon;
                 
@@ -43,8 +40,9 @@ $(document).ready(function(){
         $('#city').html(capitalize(result.name));
         $('#dateTime').html(capitalize(dateInfo()));
         $('#weather').html(`${celsiusUnit}°${units}`);
-        $('#main').html(result.weather[0].main);
-        
+        $('#main').html(capitalize(result.weather[0].main));
+    
+        weatherIcon(capitalize(result.weather[0].main));
         $('#button').on('click', function(){
             if(units === 'C'){
                 units = 'F';
@@ -90,22 +88,43 @@ $(document).ready(function(){
         return `${day}, ${date} ${month} ${year}`;
     }
 
+    const toFahrenheit = c => Math.round((c * 1.8) + 32);
+    const toCelsius = f => Math.round((f - 32)/1.8);
+        
 });
 
-const toFahrenheit = c => Math.round((c * 1.8) + 32);
-const toCelsius = f => Math.round((f - 32)/1.8);
+const weatherIcon = (description)=>{
+    
+    description = description.toLowerCase();
+    let weatherDescription = document.getElementById('weatherIcon');
+    let cloudyDescription = document.getElementById('main');
 
-/*
+    switch(description){
+        case 'drizzle':
+            weatherDescription.src = "img/drizzle.png";
+            break;
+        case 'clouds':
+            cloudyDescription.innerHTML = 'CLOUDY';
+            weatherDescription.src = "img/cloudy.png";
+            break;
+        case 'rain':
+            weatherDescription.src = "img/rain.png";
+            break;
+        case 'snow':
+            weatherDescription.src = "img/snow.png";
+            break;
+        case 'clear':
+            weatherDescription.src = "img/clear.png";
+            break;
+        case 'thunderstorm':
+            weatherDescription.src = "img/thunderstorm.png";
+            break;
+    }
 
-- drizzle
-- clouds
-- rain
-- snow
-- clear
-- thunderstorm
+}
 
 
-*/
+
 
 
 
