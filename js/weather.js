@@ -44,6 +44,7 @@ $(document).ready(function(){
         $('#dateTime').html(capitalize(dateInfo()));
         $('#weather').html(`${celsiusUnit}°${units}`);
         $('#main').html(result.weather[0].main);
+        
         $('#button').on('click', function(){
             if(units === 'C'){
                 units = 'F';

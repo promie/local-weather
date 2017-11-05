@@ -19,3 +19,8 @@
     color: black;
     margin-top: 10px;
 }
+
+
+#weatherIcon{
+    width: 150px;
+}
