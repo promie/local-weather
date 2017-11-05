@@ -94,7 +94,17 @@ $(document).ready(function(){
 const toFahrenheit = c => Math.round((c * 1.8) + 32);
 const toCelsius = f => Math.round((f - 32)/1.8);
 
+/*
 
+- drizzle
+- clouds
+- rain
+- snow
+- clear
+- thunderstorm
+
+
+*/
 
 
 
