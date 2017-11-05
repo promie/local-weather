@@ -1,4 +1,14 @@
-#test{
-    color: red;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Baloo');
+
+#city{
+    font-family: 'Baloo', cursive;
+    font-size: 40px;
+    margin-top: 60px;
+    color: black;
+}
+
+#dateTime{
+    color: black;
+    font-family: 'Baloo', cursive;
+    margin-top: -20px;
 }
