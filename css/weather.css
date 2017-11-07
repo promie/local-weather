@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo');
 
+
 #city{
     font-family: 'Baloo', cursive;
     font-size: 50px;
-    margin-top: 60px;
+    margin-top: 40px;
     color: black;
 }
 
@@ -19,6 +20,8 @@
     color: black;
     margin-top: 10px;
 }
+
+
 
 
 #weatherIcon{
