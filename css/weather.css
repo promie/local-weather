@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo');
 
+body{
+    margin: 0;
+    paddng: 0;
+}
+
 
 #city{
     font-family: 'Baloo', cursive;
@@ -42,3 +47,4 @@
     margin-top: -30px;
 
 }
+
