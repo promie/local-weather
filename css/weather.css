@@ -8,8 +8,8 @@ body{
 
 #city{
     font-family: 'Baloo', cursive;
-    font-size: 50px;
-    margin-top: 40px;
+    font-size: 40px;
+    margin-top: 10px;
     color: black;
 }
 
@@ -91,4 +91,10 @@ body{
     color: black;
     font-size: 18px;
     margin-top: -15px;   
+}
+
+#author{
+    color: black;
+    font-family: 'Baloo', cursive;
+    margin-top: 25px;   
 }
