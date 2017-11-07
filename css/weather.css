@@ -48,3 +48,47 @@ body{
 
 }
 
+.image-icon{
+    width: 30px;
+}
+
+.marginTop{
+    margin-top: 20px;
+}
+
+#humidity{
+    font-family: 'Baloo', cursive;
+    color: black; 
+}
+
+#humidityValue{
+    font-family: 'Baloo', cursive;
+    color: black;
+    font-size: 18px;
+    margin-top: -15px; 
+}
+
+#windSpeed{
+    font-family: 'Baloo', cursive;
+    color: black; 
+}
+
+#windSpeedValue{
+    font-family: 'Baloo', cursive;
+    color: black;
+    font-size: 18px;
+    margin-top: -15px;  
+}
+
+
+#temperatureUnit{
+    font-family: 'Baloo', cursive;
+    color: black; 
+}
+
+#temperatureUnitValue{
+    font-family: 'Baloo', cursive;
+    color: black;
+    font-size: 18px;
+    margin-top: -15px;   
+}
