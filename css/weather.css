@@ -96,5 +96,28 @@ body{
 #author{
     color: black;
     font-family: 'Baloo', cursive;
-    margin-top: 25px;   
+    margin-top: 25px;
+
 }
+
+#author{
+    display: none;
+}
+
+#github{
+    display: none;
+    
+}
+
+#humidity-icon{
+    display: none;
+}
+
+#windSpeed-icon{
+    display: none;
+}
+
+#button{
+    display: none;
+}
+

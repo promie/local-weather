@@ -27,6 +27,7 @@ $(document).ready(function(){
             url: urlString,
             success: result=>{
                 weatherInfo(result);
+                showElements();
             }
         });
     }
@@ -135,6 +136,22 @@ const weatherIcon = (description)=>{
             break;
     }
 
+}
+
+const showElements = () =>{
+    const author = document.getElementById('author');
+    author.style.display = 'block';
+    const githubLogo = document.getElementById('github');
+    githubLogo.style.display = 'block';
+    const humidity = document.getElementById('humidity-icon');
+    humidity.style.display = 'block';
+    humidity.style.margin = '0 auto';
+    const windSpeed = document.getElementById('windSpeed-icon');
+    windSpeed.style.display = 'block';
+    windSpeed.style.margin = '0 auto';
+    const temperatureUnit = document.getElementById('button');
+    temperatureUnit.style.display = 'block';
+    temperatureUnit.style.margin = '0 auto';
 }
 
 
