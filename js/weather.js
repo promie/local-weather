@@ -54,12 +54,13 @@ $(document).ready(function(){
         $('#button').on('click', function(){
             if(units === 'C'){
                 units = 'F';
+                fahrenUnit = toFahrenheit(`${result.main.temp}`);
                 $('#weather').html(toFahrenheit(`${result.main.temp}`) + `°${units}`);
                 $('#temperatureUnit').html('Celsius');
                 $('#temperatureUnitValue').html(toCelsius(`${fahrenUnit}`) + `°C`);      
             }else if(units === 'F'){
                 units = 'C';
-                fahrenUnit = toFahrenheit(`${result.main.temp}`)
+                fahrenUnit = toFahrenheit(`${result.main.temp}`);
 
                 $('#weather').html(toCelsius(`${fahrenUnit}`) + `°${units}`);
                 $('#temperatureUnit').html('Fahrenheit');
