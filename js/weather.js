@@ -13,7 +13,7 @@ $(document).ready(function(){
                         getAPIInfo(lat,lon);
                     });
                 }else{
-                    console.log('Geolocation is not supported by this browser');
+                    alert('Geolocation is not supported by this browser');
                 }
     
             
@@ -122,7 +122,7 @@ const weatherIcon = (description)=>{
         case 'clouds':
             cloudyDescription.innerHTML = 'CLOUDY';
             weatherDescription.src = "img/cloudy.png";
-            document.body.style.background = "#52D017 no-repeat right top";
+            document.body.style.background = "#ffff00 no-repeat right top";
             break;
         case 'rain':
             weatherDescription.src = "img/rain.png";
