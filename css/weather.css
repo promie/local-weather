@@ -5,7 +5,27 @@ body{
     paddng: 0;
 }
 
+/*=====FORMAT=====*/
+.marginTop{
+    margin-top: 20px;
+}
 
+/*=====TOP SECTION=====*/
+#author{
+    color: black;
+    font-family: 'Baloo', cursive;
+    margin-top: 25px;
+}
+
+.github{
+    font-size: 35px;
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+}
+
+
+/*=====WEATHER INFO SECTION=====*/
 #city{
     font-family: 'Baloo', cursive;
     font-size: 40px;
@@ -18,15 +38,6 @@ body{
     font-family: 'Baloo', cursive;
     margin-top: -20px;
 }
-
-.github{
-    font-size: 35px;
-    text-decoration: none;
-    color: black;
-    margin-top: 10px;
-}
-
-
 
 
 #weatherIcon{
@@ -52,9 +63,7 @@ body{
     width: 30px;
 }
 
-.marginTop{
-    margin-top: 20px;
-}
+/*=====BOTTOM SECTION=====*/
 
 #humidity{
     font-family: 'Baloo', cursive;
@@ -93,12 +102,8 @@ body{
     margin-top: -15px;   
 }
 
-#author{
-    color: black;
-    font-family: 'Baloo', cursive;
-    margin-top: 25px;
 
-}
+/*=====HIDDEN DISPLAY=====*/
 
 #author{
     display: none;
@@ -106,7 +111,7 @@ body{
 
 #github{
     display: none;
-    
+
 }
 
 #humidity-icon{

@@ -117,22 +117,28 @@ const weatherIcon = (description)=>{
     switch(description){
         case 'drizzle':
             weatherDescription.src = "img/drizzle.png";
+            document.body.style.background ='#E5E4E2 no-repeat right top';
             break;
         case 'clouds':
             cloudyDescription.innerHTML = 'CLOUDY';
             weatherDescription.src = "img/cloudy.png";
+            document.body.style.background = "#52D017 no-repeat right top";
             break;
         case 'rain':
             weatherDescription.src = "img/rain.png";
+            document.body.style.background = "#C8BDAF no-repeat right top";
             break;
         case 'snow':
             weatherDescription.src = "img/snow.png";
+            document.body.style.background = "#FCDFFF no-repeat right top";
             break;
         case 'clear':
             weatherDescription.src = "img/clear.png";
+            document.body.style.background = "#CCFFFF no-repeat right top"
             break;
         case 'thunderstorm':
             weatherDescription.src = "img/thunderstorm.png";
+            document.body.style.background = "#F9966B no-repeat right top";
             break;
     }
 
