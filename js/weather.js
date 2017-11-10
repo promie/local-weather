@@ -35,23 +35,36 @@ $(document).ready(function(){
 
         let units = 'C';
         let fahrenUnit;
+        let percentage = '%';
+        let kmPerHour = 'km/h'
         const celsiusUnit = Math.round(result.main.temp);
         
         $('#city').html(capitalize(result.name));
         $('#dateTime').html(capitalize(dateInfo()));
         $('#weather').html(`${celsiusUnit}°${units}`);
         $('#main').html(capitalize(result.weather[0].main));
-    
+        $('#humidity').html('Humidity');
+        $('#humidityValue').html(`${result.main.humidity}${percentage}`);
+        $('#windSpeed').html('Wind Speed');
+        $('#windSpeedValue').html(`${result.wind.speed} ${kmPerHour}`);
+        $('#temperatureUnit').html('Fahrenheit');
+        $('#temperatureUnitValue').html(toFahrenheit(`${result.main.temp}`) + `°F`);
+
         weatherIcon(capitalize(result.weather[0].main));
         $('#button').on('click', function(){
             if(units === 'C'){
                 units = 'F';
-                $('#weather').html(toFahrenheit(`${result.main.temp}`) + `°${units}`);      
+                $('#weather').html(toFahrenheit(`${result.main.temp}`) + `°${units}`);
+                $('#temperatureUnit').html('Celsius');
+                $('#temperatureUnitValue').html(toCelsius(`${fahrenUnit}`) + `°C`);      
             }else if(units === 'F'){
                 units = 'C';
                 fahrenUnit = toFahrenheit(`${result.main.temp}`)
 
                 $('#weather').html(toCelsius(`${fahrenUnit}`) + `°${units}`);
+                $('#temperatureUnit').html('Fahrenheit');
+                $('#temperatureUnitValue').html(toFahrenheit(`${result.main.temp}`) + `°F`);      
+                
             }
         });
     }
